@@ -18,7 +18,7 @@
  */
 
 --
--- graph id conversion function
+-- graphid conversion function
 --
 CREATE FUNCTION ag_catalog.graphid_to_agtype(graphid)
     RETURNS agtype
@@ -113,7 +113,7 @@ PARALLEL SAFE
 AS 'MODULE_PATHNAME';
 
 --
--- There are times when the optimizer might eliminate
+-- There are times when the optimizer might eliminate the
 -- functions we need. Wrap the function with this to
 -- prevent that from happening
 --
